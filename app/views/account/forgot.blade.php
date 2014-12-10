@@ -1,9 +1,11 @@
+<div class="container">
 @extends('layout.main')
 
 @section('content')
-<form action="{{URL::route('account-forgot-password-post') }}" method="post">
+<form action="{{URL::route('account-forgot-password-post') }}" method="post" class="user">
 	<div class="field">
-		Email: <input type="text" name="email"{{(Input::old('email')) ? 'value="'. e(Input::old('email')) .'"' :''}}>
+	<label for="email">Email: </label>
+		<input type="text" name="email"{{(Input::old('email')) ? 'value="'. e(Input::old('email')) .'"' :''}}>
 		@if($errors->has('email'))
 		{{ $errors->first('email') }}
 		@endif
@@ -12,7 +14,8 @@
 	
 
 
-	<input type="submit" value="Recover">
+	<input type="submit" value="Recover" class="btn btn-success">
 	{{ Form::token()}}
 </form>
 @stop
+</div>

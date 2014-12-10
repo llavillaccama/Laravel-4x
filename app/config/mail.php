@@ -54,7 +54,7 @@ return array(
 	|'from' => array('address' => null, 'name' => null),
 	*/
 
-	'from' => array('address' => 'llavillaccama@gmail.com', 'name' => 'Auth'),
+	'from' => array('address' => 'llavillaccama@gmail.com', 'name' => 'Web Design JC'),
 
 	/*
 	|--------------------------------------------------------------------------

@@ -62,6 +62,12 @@ Route::group(array('before' => 'guest'), function() {
 		));
 
 
+	Route::post('/contact',array(
+		'as' => 'contact-post',
+		'uses' => 'HomeController@postContact'
+		));
+
+
 });
 
 	/*	/Forgot password  (Get)	*/
