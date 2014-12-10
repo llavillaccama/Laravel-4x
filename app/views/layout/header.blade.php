@@ -11,7 +11,8 @@
 	{{ HTML::style('css/bootstrap.min.css') }}
 	<!-- Custom CSS -->
 	{{ HTML::style('css/freelancer.css') }}
-	{{ HTML::style('css/style.css') }}
+  {{ HTML::style('css/style.css') }}
+	
 	<!-- Custom Fonts -->
 	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -24,3 +25,4 @@
         <![endif]-->
     </head>
      <body id="page-top" class="index">
+   

@@ -1,6 +1,6 @@
 @include('layout.header')
 
-<!-- Navigation -->
+  <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
    <!-- Brand and toggle get grouped for better mobile display -->
@@ -11,7 +11,8 @@
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
    </button>
-   <a class="navbar-brand logo" href="#page-top"><img src="img/logo.png" alt="">Web Design JC</a>
+
+   <a class="navbar-brand logo" href="#page-top">{{ HTML::image('img/logo.png') }}Web Design JC</a>
  </div>
  <!-- Collect the nav links, forms, and other content for toggling -->
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -29,7 +30,7 @@
     <a href="#contact">Contacto</a>
   </li>
   @if(Auth::check())
-  <li class="page-scroll"><a href="/sign-out">Salir</a></li>
+  <li class="page-scroll"><a href="sign-out">Salir</a></li>
   @else
   <li class="page-scroll"><a href="{{ URL::route('account-sign-in') }}">Entrar</a></li>
   @endif
@@ -43,7 +44,6 @@
 </div>
 <!-- /.container-fluid -->
 </nav>
-
 <!-- User  Menu -->
 <div class="user-content">
   <div class="container">

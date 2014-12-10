@@ -1,3 +1,8 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<a class="navbar-brand logo" href="/">{{ HTML::image('img/logo.png') }}Web Design JC</a>
+	</div>
+</nav>
 <div class="container">
 @extends('layout.main')
 @section('content')

@@ -1,4 +1,10 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<a class="navbar-brand logo" href="/">{{ HTML::image('img/logo.png') }}Web Design JC</a>
+	</div>
+</nav>
 <div class="container">
+
 	@extends('layout.main')
 	@section('content')
 	<form action="{{ URL::route('account-create-post') }}" method="post" class="user">
@@ -33,5 +39,6 @@
 		<input type="submit" value="Create Acount" class="btn btn-success">
 		{{ Form::token() }}
 	</form>
+
 	@stop
 </div>
